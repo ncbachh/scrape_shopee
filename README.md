@@ -77,7 +77,7 @@ df.to_csv("shopee_reviews.csv", index=False, encoding="utf-8-sig")
 Phương pháp này là sự kết hợp hoàn hảo giữa tự động hóa và duy trì danh tính thực. Nó giải quyết triệt để vấn đề bị chặn bởi API hay Captcha, giúp việc lấy dữ liệu đánh giá sản phẩm trở nên ổn định và hiệu quả nhất trong bối cảnh các trang thương mại điện tử ngày càng thắt chặt an ninh.
 
 ### Tóm tắt toàn bộ quy trình hoạt động
-1.  Người dùng mở Chrome ở chế độ debugging.
+1.  Người dùng mở Chrome ở chế độ debugging bằng cách nhập `"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\shopee_data"` trên cmd.
 2.  Đăng nhập Shopee thủ công.
 3.  Chạy Python script.
 4.  Selenium kết nối vào Chrome thật qua `127.0.0.1:9222`.
