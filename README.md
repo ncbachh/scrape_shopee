@@ -79,7 +79,7 @@ Phương pháp này là sự kết hợp hoàn hảo giữa tự động hóa v�
 ### Tóm tắt toàn bộ quy trình hoạt động
 1.  Người dùng mở Chrome ở chế độ debugging bằng cách nhập `"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\shopee_data"` trên cmd.
 2.  Đăng nhập Shopee thủ công.
-3.  Chạy Python script.
+3.  Chạy Python script (Từ sau bước này Python sẽ tự động crawl, người dùng không cần làm gì cả).
 4.  Selenium kết nối vào Chrome thật qua `127.0.0.1:9222`.
 5.  Mở trang sản phẩm.
 6.  Cuộn xuống và load review.

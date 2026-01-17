@@ -51,6 +51,7 @@ def collect_reviews(driver, max_pages=3):
     return all_reviews
 
 def main():
+    # URL sản phẩm shopee cần crawl
     PRODUCT_URL = "https://shopee.vn/product/737801055/21742804545"
     
     driver = get_driver_remote()
@@ -63,6 +64,8 @@ def main():
     driver.execute_script("window.scrollTo(0, 2500);")
     time.sleep(2)
     
+    # Nhập max_pages = số lượng trang muốn crawl
+    # 1 trang shopee sẽ có 6 comments.
     data = collect_reviews(driver, max_pages=3)
     
     if data:
